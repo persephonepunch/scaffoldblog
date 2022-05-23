@@ -6,7 +6,7 @@
 <div>
 
 
-    <div class="grid grid-cols-3 gap-4 relative ">
+    <div class="grid grid-cols-2 gap-4 relative ">
             <div class="card lg:card-side bg-base-100 shadow-xl p-2">
                 <figure><img class="object-contain" src="https://hagenblack-11ty.netlify.app/assets/images/jane-beiles-9456-2-p-1080.jpeg" alt="Album"></figure>
                 <div class="card-body">
@@ -31,28 +31,32 @@
             </div>
 
 
+
+            <!--drawer-->
+<div>
+  <div class="drawer">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        <!-- Page content here -->
+        <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label>
+      </div> 
+      <div class="drawer-side">
+        <label for="my-drawer" class="drawer-overlay"></label>
+        <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+          <!-- Sidebar content here -->
+          <li><a>Sidebar Item 1</a></li>
+          <li><a>Sidebar Item 2</a></li>
+          
+        </ul>
+      </div>
     </div>
 
 
-    <!--drawer-->
-<div>
-    <div class="drawer">
-        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content">
-          <!-- Page content here -->
-          <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label>
-        </div> 
-        <div class="drawer-side">
-          <label for="my-drawer" class="drawer-overlay"></label>
-          <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-            <!-- Sidebar content here -->
-            <li><a>Sidebar Item 1</a></li>
-            <li><a>Sidebar Item 2</a></li>
-            
-          </ul>
-        </div>
-      </div>
 
+    </div>
+
+
+    
 
       <!--drawer 2-->
 
