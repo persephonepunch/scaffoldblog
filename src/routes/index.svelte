@@ -33,7 +33,7 @@
             <div>
                 <div class="collapse">
                     <input type="checkbox" class="peer" /> 
-                    <div class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <div class="collapse-title bg-primary text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
                     Click me to show/hide content
                     </div>
                     <div class="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"> 
@@ -50,7 +50,7 @@
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
         <!-- Page content here -->
-        <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label>
+        <label for="my-drawer" class="btn btn-primary text-xs text-white  drawer-button">Open drawer</label>
       </div> 
       <div class="drawer-side">
         <label for="my-drawer" class="drawer-overlay"></label>

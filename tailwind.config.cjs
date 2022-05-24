@@ -17,14 +17,14 @@ const config = {
 			{
 				mytheme: {
 					"primary": "#fb7185",
-					"secondary": "#fee2e2",
+					"secondary": "#a9a0a5",
 					"accent": "#fca5a5",
 					"neutral": "#e5e7eb",
 					"base-100": "#FFFFFF",
 					"info": "#f43f5e",
 					"success": "#4b5563",
 					"warning": "#9ca3af",
-					"error": "#f43f5e",
+					"error": "#f6627c",
 		
 				  "--rounded-box": "0rem", // border radius rounded-box utility class, used in card and other large boxes
 				  "--rounded-btn": "0rem", // border radius rounded-btn utility class, used in buttons and similar element
