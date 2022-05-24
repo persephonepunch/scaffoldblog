@@ -1,12 +1,24 @@
 
-<main class="container mx-auto max-w-7xl">
+  
 
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+
+
+
+
+
+
+
+
+
+
+
 <div>
 
 
-    <div class="grid grid-cols-2 gap-4 relative ">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative ">
             <div class="card lg:card-side bg-base-100 shadow-xl p-2">
                 <figure><img class="object-contain" src="https://hagenblack-11ty.netlify.app/assets/images/jane-beiles-9456-2-p-1080.jpeg" alt="Album"></figure>
                 <div class="card-body">
@@ -80,4 +92,3 @@
     </div>
 </div>
 
-</main>
