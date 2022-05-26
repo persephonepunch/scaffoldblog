@@ -23,11 +23,11 @@
 </svelte:head>
 
 
-<div class="hero min-h-screen" style="background-image: url(https://hagenblack-11ty.netlify.app/assets/images/jane-beiles-9456-2-p-1080.jpeg?w=1000&h=800);">
+<div class="hero min-h-screen mb-50" style="background-image: url(https://hagenblack-11ty.netlify.app/assets/images/jane-beiles-9456-2-p-1080.jpeg?w=1000&h=800);">
   <div class="hero-overlay bg-black bg-opacity-20"></div>
   <div class="hero-content text-left text-neutral-content">
-    <div class="max-w-md justify-start">
-      <h1 class="mb-5 text-5xl font-thin text-white tracking-widest">HAGEN BLACK</h1>
+    <div class="max-w-xl justify-start">
+      <h1 class="mb-5 text-5xl font-thin text-white tracking-[.45em] "> HAGEN BLACK</h1>
       <p class="mb-5 text-white text-sm tracking-widest">INTERIOR DESIGN</p>
   
     </div>
@@ -37,7 +37,7 @@
 
 
 
-
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative mt-10 ">
 
 {#each posts as {title, slug, excerpt, coverImage, tags }}
 <div class="card justify-center mx-auto max-w-xl text-center shadow-2xl mb-20">
@@ -62,10 +62,10 @@
 </div>
 
 {/each}
-
+</div>
 
 <div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative ">
+    <div class="grid grid-cols-1  gap-4 relative ">
 
 
             <div>

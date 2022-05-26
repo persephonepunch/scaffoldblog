@@ -45,7 +45,7 @@ const config = {
 					normal: '0',
 					wide: '.025em',
 					wider: '.05em',
-					widest: '1em',
+					widest: '1.0em',
 				  },
 
 				},
