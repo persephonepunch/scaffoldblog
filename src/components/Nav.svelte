@@ -1,4 +1,4 @@
-<div class="navbar bg-base-100">
+<div class="navbar bg-base-100 z-30 border-b-1 border-black">
     <div class="flex-1">
       <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
     </div>

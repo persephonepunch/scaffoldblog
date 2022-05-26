@@ -17,10 +17,34 @@
 </script>
 
 
-<pre>{JSON.stringify(posts, null, 2)}</pre>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+<title>Tailwind-Daisy UI Graph CMS Scaffold</title>
+</svelte:head>
 
+
+{#each posts as {title, slug, excerpt, coverImage, tags }}
+ <div class="card justify-center mx-auto max-w-xl text-center shadow-2xl mb-20">
+   <figure class="px-10 pt-10">
+     <img class="object-cover" src={coverImage.url} alt={`Cover Image For ${title} `}/>
+    </figure>
+
+    <div class="card-body">
+      <h2 class="title">{title}</h2>
+      <p class="text-gray-900">{excerpt}</p>
+    </div>
+
+     <div class="justify-center card-actions">
+       <a href={`/posts/${slug}`} 
+       class ="btn btn-outline btn-primary text-white mb-20">
+       Read More
+       </a>
+     </div>
+
+
+
+ </div>
+
+{/each}
 
 
 
