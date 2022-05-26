@@ -36,8 +36,23 @@ const config = {
 				  "--border-btn": "1px", // border width of buttons
 				  "--tab-border": "1px", // border width of tabs
 				  "--tab-radius": "0rem", // border radius of tabs
+
+
+				letterSpacing: {
+					tightest: '-.075em',
+					tighter: '-.05em',
+					tight: '-.025em',
+					normal: '0',
+					wide: '.025em',
+					wider: '.05em',
+					widest: '1em',
+				  },
+
 				},
+
+
 			  },
+
 
 		  ],
 

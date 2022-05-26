@@ -11,10 +11,11 @@
   }
 </script>
 
-
 <script>
   export let posts
 </script>
+
+
 
 
 <svelte:head>
@@ -22,49 +23,15 @@
 </svelte:head>
 
 
-{#each posts as {title, slug, excerpt, coverImage, tags }}
- <div class="card justify-center mx-auto max-w-xl text-center shadow-2xl mb-20">
-   <figure class="px-10 pt-10">
-     <img class="object-cover" src={coverImage.url} alt={`Cover Image For ${title} `}/>
-    </figure>
-
-    <div class="card-body">
-      <h2 class="title">{title}</h2>
-      <p class="text-gray-900">{excerpt}</p>
+<div class="hero min-h-screen" style="background-image: url(https://hagenblack-11ty.netlify.app/assets/images/jane-beiles-9456-2-p-1080.jpeg?w=1000&h=800);">
+  <div class="hero-overlay bg-black bg-opacity-20"></div>
+  <div class="hero-content text-left text-neutral-content">
+    <div class="max-w-md justify-start">
+      <h1 class="mb-5 text-5xl font-thin text-white tracking-widest">HAGEN BLACK</h1>
+      <p class="mb-5 text-white text-sm tracking-widest">INTERIOR DESIGN</p>
+  
     </div>
-
-     <div class="justify-center card-actions">
-       <a href={`/posts/${slug}`} 
-       class ="btn btn-outline btn-primary text-white mb-20">
-       Read More
-       </a>
-     </div>
-
-
-
- </div>
-
-{/each}
-
-
-
-
-
-
-
-
-
-
-<div>
-  <div class="card lg:card-side bg-base-100 shadow-xl p-2">
-    <figure><img class="object-contain" src="https://hagenblack-11ty.netlify.app/assets/images/jane-beiles-9456-2-p-1080.jpeg" alt="Album"></figure>
-    <div class="card-body">
-    <h2 class="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
-    <div class="card-actions justify-end">
-        <button class="btn btn-primary">Listen</button>
-    </div>
-    </div>
+  </div>
 </div>
 
 
@@ -72,6 +39,32 @@
 
 
 
+{#each posts as {title, slug, excerpt, coverImage, tags }}
+<div class="card justify-center mx-auto max-w-xl text-center shadow-2xl mb-20">
+<figure class="px-10 pt-10">
+  <img class="object-cover" src={coverImage.url} alt={`Cover Image For ${title} `}/>
+ </figure>
+
+ <div class="card-body">
+   <h2 class="title">{title}</h2>
+   <p class="text-gray-900">{excerpt}</p>
+ </div>
+
+  <div class="justify-center card-actions">
+    <a href={`/posts/${slug}`} 
+    class ="btn btn-outline btn-primary text-white mb-20">
+    Read More
+    </a>
+  </div>
+
+
+
+</div>
+
+{/each}
+
+
+<div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative ">
 
 
@@ -90,6 +83,17 @@
 
 
 <div>
+
+
+
+
+
+
+
+
+
+
+
   <div class="drawer">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
